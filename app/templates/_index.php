@@ -1,7 +1,7 @@
 <?php
 require_once '../vendor/autoload.php';
 
-$title = 'Calculadora Concelhos em Emergência';
+$title = 'Calculadora Concelhos em Risco Elevado';
 $description = 'Quantos casos precisa de ter o meu concelho para entrar no estado de emergência?';
 include 'includes/head.php';
 
