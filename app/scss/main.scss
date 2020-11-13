@@ -1,0 +1,47 @@
+$primary:       #FF9800 !default;
+$secondary:     #E9DF00 !default;
+$ee: #333;
+
+
+$reeed: #FB5012 !default;
+$greeen: #8BC34A !default;
+
+$background-color: #F5F5F5 !default;
+// Bootstrap file partials
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body{
+  background-color: $background-color;
+  font-family: 'Roboto', sans-serif;
+
+  .footer-copyright{
+    color: #03020299!important;
+  }
+
+  .btn-primary{
+    background-color: $primary !important;
+    color: white;
+  }
+
+  .pp{
+    font-size: 3em;
+  }
+
+
+  .nop{
+    font-size: 5rem;
+    font-weight: 700;
+    color: $reeed;
+  }
+
+  .yeah{
+    font-size: 5rem;
+    font-weight: 700;
+    color: $greeen;
+  }
+}
+@include media-breakpoint-down(xs) {}
+@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(xl) {}
