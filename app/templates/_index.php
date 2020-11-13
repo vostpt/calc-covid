@@ -313,14 +313,14 @@ $cases = $_GET['casos'] ? htmlentities($purifier->purify($_GET['casos']), ENT_QU
     <div class="row mt-5 js-emergency" style="display:none">
         <div class="col-12 text-center">
             <p class="pp">Com <span class="js-cases"></span> casos confirmados nos últimos 14 dias <strong><span class="js-concelho"></span></p>
-            <p class="pp"><span class="nop">entra em ESTADO DE EMERGÊNCIA</span></p>
+            <p class="pp"><span class="nop">entraria em ESTADO DE EMERGÊNCIA</span></p>
         </div>
     </div>
 
     <div class="row mt-5 js-not-emergency" style="display:none">
         <div class="col-12 text-center">
             <p class="pp">Com <span class="js-cases"></span> casos confirmados nos últimos 14 dias <strong><span class="js-concelho"></span></strong></p>
-            <p><span class="yeah">NÃO ENTRA em estado de emergência</span></p>
+            <p><span class="yeah">NÃO ENTRARIA em estado de emergência</span></p>
             <p class="pp">Mas com <span class="js-min"></span> já entrava.</p>
         </div>
     </div>
