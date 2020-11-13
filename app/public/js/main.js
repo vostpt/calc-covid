@@ -35,7 +35,7 @@ function calc(){
     $('.js-cases').text(count);
     $('.js-concelho').text(concelho)
     $('.js-min').text(min);
-    $('.js-cases-100k').text(Math.ceil(tax));
+    $('.js-cases-100k').text(tax);
 
     if(emergency){
         $('.js-emergency').show();
