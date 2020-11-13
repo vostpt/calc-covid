@@ -17,7 +17,7 @@ $cases = $_GET['casos'] ? htmlentities($purifier->purify($_GET['casos']), ENT_QU
     <div class="row mt-5">
         <div class="md-form mt-0 col-12">
             <input type="text" id="casos" name="casos" class="form-control" value="<?= $cases ?>">
-             <label for="casos">Número de casos confirmados nos últimos 14 dias</label>
+             <label for="casos">Número de novos casos confirmados nos últimos 14 dias</label>
         </div>
         <p class="nop js-count-req" style="display:none">Tens de preencher o número de casos!</p>
     </div>
