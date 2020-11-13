@@ -11,13 +11,20 @@ $(function () {
 });
 
 function calc(){
+    $('.js-count-req').hide();
     $('.js-emergency').hide();
+    $('.js-stats').hide();
     $('.js-not-emergency').hide();
 
     var population = $('.js-select').val();
     var concelho = $('.js-select option:selected').text()
     var min = $('.js-select option:selected').data('min');
     var count = $('#casos').val();
+
+    if(!count){
+        $('.js-count-req').show();
+        return;
+    }
     var tax = (count / population) * 100000;
 
     var emergency = false;
@@ -28,12 +35,15 @@ function calc(){
     $('.js-cases').text(count);
     $('.js-concelho').text(concelho)
     $('.js-min').text(min);
+    $('.js-cases-100k').text(Math.ceil(tax));
 
     if(emergency){
         $('.js-emergency').show();
     } else {
         $('.js-not-emergency').show();
     }
+
+    $('.js-stats').show();
 
     insertUrlParam('concelho', concelho);
     insertUrlParam('casos', count);

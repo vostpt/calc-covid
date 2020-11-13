@@ -17,8 +17,9 @@ $cases = $_GET['casos'] ? htmlentities($purifier->purify($_GET['casos']), ENT_QU
     <div class="row mt-5">
         <div class="md-form mt-0 col-12">
             <input type="text" id="casos" name="casos" class="form-control" value="<?= $cases ?>">
-            <label for="casos">Número de casos confirmados nos últimos 14 dias</label>
+             <label for="casos">Número de casos confirmados nos últimos 14 dias</label>
         </div>
+        <p class="nop js-count-req" style="display:none">Tens de preencher o número de casos!</p>
     </div>
     <div class="row">
         <div class="col-12 text-center">
@@ -322,6 +323,12 @@ $cases = $_GET['casos'] ? htmlentities($purifier->purify($_GET['casos']), ENT_QU
             <p class="pp">Com <span class="js-cases"></span> casos confirmados nos últimos 14 dias <strong><span class="js-concelho"></span></strong></p>
             <p><span class="yeah">NÃO ENTRARIA em estado de emergência</span></p>
             <p class="pp">Mas com <span class="js-min"></span> já entrava.</p>
+        </div>
+    </div>
+
+    <div class="row mt-0 js-stats" style="display:none">
+        <div class="col-12 text-center">
+            <p class="pp"><span class="js-cases"></span> casos confirmados são equivalentes a <span class="js-cases-100k"></span> novos casos confirmados por 100.000 habitantes</p>
         </div>
     </div>
 
