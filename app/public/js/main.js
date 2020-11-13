@@ -25,7 +25,7 @@ function calc(){
         $('.js-count-req').show();
         return;
     }
-    var tax = (count * 100000) * population;
+    var tax = (count * 100000) / population;
 
     var emergency = false;
     if(tax >= 240){
