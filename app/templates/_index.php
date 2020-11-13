@@ -24,7 +24,6 @@ $cases = $_GET['casos'] ? htmlentities($purifier->purify($_GET['casos']), ENT_QU
     <div class="row">
         <div class="col-12 text-center">
             <select class="js-select" name="count">
-                <option data-min='0' value='POPULAÇÃO PORDATA' <?php if($concelho === 'NOME CONCELHO'): ?> selected <?php endif; ?>>NOME CONCELHO</option>
                 <option data-min='85' value='35254' <?php if($concelho === 'Abrantes'): ?> selected <?php endif; ?>>Abrantes</option>
                 <option data-min='111' value='46034' <?php if($concelho === 'Águeda'): ?> selected <?php endif; ?>>Águeda</option>
                 <option data-min='12' value='4696' <?php if($concelho === 'Aguiar da Beira'): ?> selected <?php endif; ?>>Aguiar da Beira</option>
